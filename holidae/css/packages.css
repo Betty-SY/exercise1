@@ -1,0 +1,107 @@
+.packages-hero {
+  background-image: url("../images/addis.jpg");
+}
+
+.filter-section {
+  width: 86%;
+  margin: 20px auto;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: 1px solid #b9ceff;
+  background: white;
+  color: #1061f4;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #1061f4;
+  color: white;
+}
+
+.packages-grid {
+  width: 86%;
+  margin: 30px auto 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.package-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(20, 61, 130, .12);
+  transition: .3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(20, 61, 130, .18);
+}
+
+.package-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.package-body {
+  padding: 22px;
+}
+
+.tag {
+  background: #eaf1ff;
+  color: #1061f4;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.package-body h3 {
+  margin: 16px 0 8px;
+  font-size: 22px;
+}
+
+.package-body p {
+  color: #6f7d94;
+  font-size: 14px;
+}
+
+.package-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.package-bottom strong {
+  color: #1061f4;
+  font-size: 20px;
+}
+
+.package-bottom a {
+  text-decoration: none;
+  background: #1061f4;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    width: 92%;
+  }
+}

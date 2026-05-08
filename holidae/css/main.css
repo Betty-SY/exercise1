@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f7ff;
+  color: #10213f;
+  font-family: "Poppins", sans-serif;
+}
+
+.topbar {
+  height: 34px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 0 62px;
+  font-size: 12px;
+  color: #4b5870;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.topbar .right {
+  margin-left: auto;
+}
+
+.navbar {
+  height: 70px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 62px;
+  gap: 55px;
+  box-shadow: 0 4px 18px rgba(22, 65, 148, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  font-size: 31px;
+  font-weight: 700;
+  color: #1061f4;
+}
+
+.logo span {
+  color: #ff8b22;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 38px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0e1d38;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar a.active {
+  color: #1061f4;
+  border-bottom: 3px solid #1061f4;
+  padding-bottom: 25px;
+}
+
+.book-btn,
+.cta button,
+.cta a {
+  background: #1061f4;
+  color: white;
+  border: none;
+  border-radius: 32px;
+  padding: 14px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(16, 97, 244, 0.28);
+}
+
+.script {
+  font-family: "Pacifico", cursive;
+  font-size: 26px;
+}
+
+.section,
+.why,
+.cta {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 35px;
+}
+
+.blue {
+  color: #1061f4;
+  font-size: 20px;
+}
+
+.section h2,
+.why h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.section h2::after,
+.why h2::after,
+.gallery-section h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #1061f4;
+  margin-top: 6px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #b9ceff;
+  background: rgba(255,255,255,.12);
+  color: #1061f4;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta {
+  margin-top: 22px;
+  height: 85px;
+  border-radius: 12px;
+  background:
+    linear-gradient(90deg, rgba(16,97,244,.95), rgba(16,97,244,.65)),
+    url("../images/addis.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 42px;
+}
+
+.cta h2 {
+  font-size: 26px;
+}
+
+.cta button,
+.cta a {
+  background: white;
+  color: #1061f4;
+  box-shadow: none;
+}
+
+footer {
+  margin-top: 18px;
+  background: #061a35;
+  color: white;
+  padding: 38px 86px 18px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+  gap: 38px;
+}
+
+footer h2 {
+  font-size: 28px;
+}
+
+footer p {
+  color: #bdc8da;
+  font-size: 13px;
+  margin: 7px 0;
+}
+
+.newsletter {
+  display: flex;
+  background: #10294f;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px 16px;
+  color: white;
+}
+
+.newsletter button {
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #1061f4;
+  color: white;
+}
+
+.copy {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.12);
+  padding-top: 18px;
+  margin-top: 28px;
+}
+
+.page-hero {
+  width: 86%;
+  margin: 30px auto;
+  height: 330px;
+  border-radius: 22px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3, 24, 60, .75), rgba(3, 24, 60, .15));
+}
+
+.page-hero div {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .topbar,
+  .navbar nav {
+    display: none;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    height: auto;
+    flex-direction: column;
+    gap: 18px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 35px 25px;
+  }
+
+  .page-hero {
+    width: 92%;
+    padding: 30px;
+    height: 420px;
+  }
+
+  .page-hero h1 {
+    font-size: 36px;
+  }
+}

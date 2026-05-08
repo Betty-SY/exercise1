@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Trip | Holidae Ethiopia</title>
+  <!-- booking.html -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/booking.css">
+<body>
+
+<header class="navbar">
+  <div class="logo">Holidae<span>✈</span></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="details.html">Details</a>
+    <a href="booking.html">booking</a>
+  </nav>
+
+  <a class="book-btn" href="booking.html">Book Now →</a>
+</header>
+
+<section class="page-hero booking-hero">
+  <div>
+    <p class="script">Secure your Ethiopian adventure</p>
+    <h1>Book Your Trip</h1>
+    <p>Complete your booking details below.</p>
+  </div>
+</section>
+
+<section class="booking-page">
+
+  <form class="booking-form" id="bookingForm">
+    <h2>Traveller Details</h2>
+
+    <div class="form-row">
+      <div>
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+      </div>
+
+      <div>
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+      </div>
+
+      <div>
+        <label>Package</label>
+        <select id="package">
+          <option value="">Select package</option>
+          <option>Lalibela Heritage Tour - £499</option>
+          <option>Danakil Depression Tour - £699</option>
+          <option>Erta Ale Volcano Trip - £799</option>
+          <option>Simien Mountains Trek - £599</option>
+          <option>Addis Ababa City Tour - £399</option>
+          <option>Omo Valley Experience - £749</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label>Check In</label>
+        <input type="date" id="checkin">
+      </div>
+
+      <div>
+        <label>Number of Guests</label>
+        <input type="number" id="guests" placeholder="2">
+      </div>
+    </div>
+
+    <label>Special Requests</label>
+    <textarea id="requests" placeholder="Any food, accessibility, hotel or travel requests?"></textarea>
+
+    <h2>Payment Details</h2>
+
+
+    <button type="submit" class="submit-booking">Confirm Booking →</button>
+
+    <p id="bookingMessage"></p>
+  </form>
+
+  <aside class="trip-summary">
+    <h3>Trip Summary</h3>
+
+    <img src="images/book.jpg">
+    <h4>Ethiopian Holiday Experience</h4>
+    <p>Explore Ethiopia’s history, culture, landscapes, and unforgettable destinations.</p>
+
+    <div class="summary-line">
+      <span>Starting from</span>
+      <strong>£399</strong>
+    </div>
+
+    <div class="summary-line">
+      <span>Support</span>
+      <strong>24/7</strong>
+    </div>
+
+    <div class="summary-line">
+      <span>Booking</span>
+      <strong>Secure</strong>
+    </div>
+  </aside>
+
+</section>
+
+<footer>
+  <p>© 2026 Holidae Ethiopia. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

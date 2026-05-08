@@ -1,0 +1,134 @@
+.booking-hero {
+  background-image:
+    linear-gradient(90deg, rgba(3, 24, 60, .75), rgba(3, 24, 60, .15)),
+    url("../images/dallol.jpg");
+}
+
+.booking-page {
+  width: 86%;
+  margin: 45px auto 70px;
+  display: grid;
+  grid-template-columns: 2fr 380px;
+  gap: 30px;
+  align-items: start;
+}
+
+.booking-form,
+.trip-summary {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 14px 32px rgba(20, 61, 130, .12);
+}
+
+.booking-form h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.booking-form label {
+  display: block;
+  margin: 14px 0 7px;
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  border: 1px solid #dce5f6;
+  border-radius: 12px;
+  padding: 14px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.booking-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.payment-box {
+  background: #f3f7ff;
+  border-left: 4px solid #1061f4;
+  border-radius: 12px;
+  padding: 18px;
+  color: #536174;
+  margin-bottom: 22px;
+}
+
+.submit-booking {
+  background: #1061f4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 32px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(16, 97, 244, 0.28);
+}
+
+#bookingMessage {
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.trip-summary {
+  position: sticky;
+  top: 100px;
+}
+
+.trip-summary img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 18px 0;
+}
+
+.trip-summary h3 {
+  font-size: 24px;
+}
+
+.trip-summary h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.trip-summary p {
+  color: #6f7d94;
+  line-height: 1.6;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e4e9f4;
+  padding: 14px 0;
+  margin-top: 10px;
+}
+
+.summary-line strong {
+  color: #1061f4;
+}
+
+@media (max-width: 900px) {
+  .booking-page {
+    width: 92%;
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-summary {
+    position: static;
+  }
+}
